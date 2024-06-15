@@ -1,0 +1,464 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: blueviolet;
+  
+   
+  
+}
+.clock{
+    height:60px;
+    width:160px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left:60px;
+}
+.blank{
+    background-color: white;
+    height:120px;
+   width:440px;
+   position: relative;
+   z-index: -10;
+   top: -140px;
+   left: 629px;
+   opacity:80%;
+   border-radius: 10px;
+}
+.blank2{
+    position: relative;
+    top:-247px;
+    width:380px;
+    left: 658px;
+    z-index: -20;
+    opacity:30%;
+}
+div img{
+    height:90px;
+    width:180px;
+}
+.box{
+    height:auto;
+    width:80px;
+    margin-top: 5px;
+    background-color: #F6E2FF;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 10px;
+    color: blueviolet;
+}
+.box4{
+    background: linear-gradient(to bottom,blueviolet,violet);
+    font-size: 37px;
+    color:white;
+    
+}
+ 
+.runclock{
+   height:100px;
+   width:500px;
+   position: relative;
+   left:600px;
+   display: flex;
+   top:-40px;
+   padding: 8px;
+   justify-content: space-around;
+   background-color: white;
+   border-radius: 10px;
+   
+}
+#text{
+  margin-top: 45px;
+  color:blueviolet;
+}
+.dot{
+    font-size: 36px;
+    margin-top: 25px;
+}
+.inputboxes{
+    background-color: white;
+    height: 270px;
+    width: 440px;
+    position: absolute;
+    left: 60px;
+    top:100px;
+    border-radius: 10px;
+
+}
+.changemsg1{
+    color:#8E53F0;
+    text-align: center;
+    height: 75px;
+    width:497px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    left: 600px;
+    top: 165px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 21px;
+    font-weight: bold;
+}
+.bigimg{
+  height:300px;
+  width:492px;
+  position: relative;
+  left:600px;
+  top:-144px;
+  border-radius:10px;
+  z-index: 10;
+  background-color: white;
+}
+
+.images{
+    height: 34px;
+    width:34px;
+}
+.div1{
+    height:auto;
+    width:390px; 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:20px;
+    left:20px;
+}
+div p{
+    margin-top: 8px;
+}
+.selctions{
+    height:28px;
+    width:190px;
+    margin-top: 4px;
+    
+}
+.slash{
+    font-weight: bold;
+    font-size: 28px ;
+    position: relative;
+    top: 10px;
+    left: 36px;
+    color: lightgray;
+}
+.goodmrng{
+ position: absolute;
+ top: 380px;
+ left:60px;
+ height: 60px;
+ border-radius: 10px;
+ color: white;
+ width:440px;
+text-align: center;
+padding-top: 5px;
+font: normal normal 900 27px/34px Bauhaus Hv BT;
+}
+.godmrng span{
+    font-family: 'Nunito Sans', sans-serif;
+    isolation: isolate;
+    font-weight: bolder;     
+}
+.goodmrng::before{
+    opacity:30%; 
+    background-color:lightgray;
+    content: '';
+    position: absolute;
+    inset: 0; 
+    border-radius: 10px;
+}
+.goodmrng h3{ 
+    color: white;
+} 
+.alarm{
+    border-radius: 10px;
+    position: absolute;
+    top:460px;
+    left:60px;
+    font-size: 20px;
+    height :50px;
+    width:190px;
+    background-image: linear-gradient( to right,violet 30%, pink 70%);
+}
+.alarm:hover{
+    background-image: linear-gradient( to right,pink 30%, violet 70%);
+}
+.alarm::before{
+content:"Set Alarm"
+}
+
+.alarm:hover::before{
+    display:none;
+}
+
+.alarm:hover::after{
+    content:"Party Time" ;
+}
+
+.updatelist{
+    position: absolute;
+    top: 450px;
+    left:280px;
+    height: 145px;
+    border-radius: 10px;
+    width:230px;
+    line-height: 17px;
+   text-align: center;
+   padding: 5px;
+   border: 2px solid black;
+   background-color: #F6E2FF;
+   font-weight: bold;
+    font: normal normal 900  Bauhaus Hv BT;
+   }
+   .blanket{
+    border: 1px solid black;
+    position: relative;
+    display: none;
+   }
+
+   @media screen and (min-width:280px) and (max-width:600px) {
+body{
+    position: relative;
+    background-color: #6511c5;
+    overflow-y: scroll;
+    width: auto;
+   }
+  
+   .selctions{
+    width:auto;
+   }
+   .div1{
+    width:280px;
+    height: 20px;
+    justify-content: space-evenly;
+   }
+    .runclock{
+        left:30px;
+        top:15px;
+        width: 300px;
+        height: 90px;
+        font: auto;
+       }
+       .box{
+        width:390px;
+        height:auto;
+        font-size: 17px;
+       
+       }
+       #text{
+        margin-top:23px;
+       }
+       .blank1{
+        left:50px;
+        top: -50px; 
+        width:260px;
+        height: 80px;
+
+       }
+       .blank2{
+         left:72px; 
+        top:-144px;
+        width:220px;
+        height: 100px;
+       }
+       .changemsg1{
+        left: 30px;
+        top: 190px;
+        width:300px;
+         height:70px; 
+    
+       }
+      .clock{
+        left:30%;
+      }
+       .inputboxes{
+       
+        left: 30px;
+        width:300px;
+        top:265px;
+        height:205px;
+        padding-top: 0px;
+       }
+       .bigimg{
+        left:30px;
+        top:475px;
+        height: auto;
+        font: auto;
+        width:300px;
+        position: absolute;
+       }
+       .goodmrng{
+        position: absolute;
+        top: 670px;
+        left:30px; 
+        width: 300px;
+        font-size: 20px;
+        height:69px;
+       
+       }
+    .alarm{
+        top:  755px;   
+        left:20px;
+        width:110px;
+        position: absolute;
+      
+    }
+ .updatelist{
+        position: absolute;
+        top:  750px;   
+        left:180px;
+        font-size:10px;
+        width:180px;
+        height: 100px;
+        margin-bottom: 20px;
+        line-height: 8px;
+        
+    } 
+    .slash{
+        left:45px;
+        top: 28px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .imgshrt{
+        height: 70px;
+        width: 160px;
+        left:30%;
+    
+    }
+.blanket{
+    display: block;
+    position: relative;
+    top:670px;
+}
+
+ 
+    
+}
+
+
+@media screen and (min-width:520px) and (max-width:900px) {
+
+  
+    *{
+     font: auto; 
+     position: relative;  
+    }
+    body{
+     height:auto;
+    }
+    .selctions{
+     width:auto;
+    }
+    .div1{
+     width:auto;
+     justify-content: space-evenly;
+    }
+     .runclock{
+       
+         left:30px;
+         top:10px;
+         width: 680px;
+         height: 90px;
+         font: auto;
+        }
+        .box{
+         width:390px;
+         height:auto;
+         font-size: 17px;
+        
+        }
+        #text{
+         margin-top:23px;
+        }
+        .imgclass{
+            height:10px;
+            top:200px;
+            position: absolute;
+        }
+        .blank1{
+         left:120px;
+         top: -60px; 
+         width:560px;
+         height: 80px;
+ 
+        }
+        .blank2{
+          left:149px; 
+         top:-140px;
+         width:500px;
+         height: 100px;
+        }
+        .changemsg1{
+         left: 30px;
+         top: 195px;
+         width:680px;
+         /* height:auto; */
+     
+         }
+     
+        .inputboxes{
+        
+         left: 30px;
+         width: 680px;
+         top:280px;
+         height:265px;
+        }
+        .bigimg{
+         left:30px;
+         top:225px;
+         height: 330px;
+         font: auto;
+         width: 680px;
+        }
+        .goodmrng{
+         top: 890px;
+         left:30px; 
+         width: 680px;
+         font-size: 20px;
+        
+        }
+     .alarm{
+         top:  300px;   
+         left:20px;
+         width: 270px;
+         position: relative;
+       
+     }
+     .updatelist{
+         position: relative;
+         top:  240px;   
+         left:370px;
+         font-size:17px;
+         width:330px;
+         height: 170px;
+         margin-bottom: 20px;
+         line-height: 25px;
+         
+     }
+     .clock{
+        left:40%;
+     }
+     .slash{
+         left:144px;
+         width:20px;
+         top:20px;
+     }
+     .imgshrt{
+         height: 60px;
+     
+     }
+ .blanket{
+    display: block;
+     position: relative;
+     top:850px;
+ }
+}
+
+  
+
+  
